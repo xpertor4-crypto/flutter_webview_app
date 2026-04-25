@@ -1,0 +1,42 @@
+name: flutter_webview_app
+description: Flutter WebView app with HTML file management
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # WebView
+  webview_flutter: ^4.4.2
+
+  # HTTP
+  http: ^1.1.0
+
+  # File picker (pick HTML files from device storage)
+  file_picker: ^6.1.1
+
+  # Local storage for auth token + server URL
+  shared_preferences: ^2.2.2
+
+  # Icons
+  cupertino_icons: ^1.0.6
+
+  # Loading / UX
+  flutter_spinkit: ^5.2.0
+
+  # URL launcher
+  url_launcher: ^6.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
